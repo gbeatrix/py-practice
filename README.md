@@ -1,1 +1,1 @@
-# py-practice
+Python gyakorlás
