@@ -47,7 +47,7 @@ def second(pattern, datadict):
 
 def main():
     reps = 5000
-    patterns = ("fiftyfive", "fifty-five", "five hundred and fifty", "five thousand")
+    patterns = ("fiftyfive", "fifty-five", "five hundred and fifty", "five thousand", "''", "there is one number here")
     for pattern in patterns:
         print('1st: {:9.4f} {:>25} -> {}'.format(
                 timeit.timeit("first(\"{}\",data)".format(pattern),
