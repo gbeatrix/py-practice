@@ -1,6 +1,6 @@
 # Python gyakorlás
 
-##### Informatika képzési terület a felsőoktatásban
+## Informatika képzési terület a felsőoktatásban
 
 |          megnevezés          | végzettség |   idő   |
 |-----------------------------------|-------|---------|
@@ -25,25 +25,30 @@ rövidítések:
 
 Forrás: [felvi.hu - szakleírások - informatika képzési terület ](https://www.felvi.hu/felveteli/szakok_kepzesek/szakleirasok/!Szakleirasok/index.php/szakterulet/4) (2023.01.04.)
 
-##### Oktatási anyagok, magyarázatok és feladatok:
+## Oktatási anyagok, magyarázatok és feladatok:
 
 * [BME - InfoPy - BProf ProgAlap](https://infopy.eet.bme.hu/)
 * [Python3 cheatsheet](https://infopy.eet.bme.hu/konyvpuska/python3-puska.pdf)
 * [Common Gotchas](https://docs.python-guide.org/writing/gotchas/)
 
-##### Specifikáció, leggyakrabban használt csomagok és ajánlások:
+## Specifikáció, leggyakrabban használt csomagok és ajánlások:
 
 * [The Python Standard Library](https://docs.python.org/3/library)
-* [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/)  
-  `import this`
+* [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/)
+  ```python
+  import this
+  ```
 * [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
 * [NumPy](https://numpy.org/doc/stable/reference/index.html)
 * [SymPy](https://docs.sympy.org/latest/reference/index.html)
+* [pandas](https://pandas.pydata.org/docs/reference/index.html)
 
-##### Fájlok és csomagok
+## Fájlok és csomagok
 
 A fájl első sorába shebang-et helyezhetünk el:
-`#!/usr/bin/env python3`
+```python
+#!/usr/bin/env python3
+```
 
 Beállíthatjuk a futtatási jogot, majd futtatjuk a kódot:
 ```bash
@@ -51,12 +56,19 @@ $ chmod u+x mycode.py
 $ ./mycode.py
 ```
 
+A `./` elhagyható, ha felvesszük az aktuális könyvtárat a `PATH` környezeti változóba (nem annyira biztonságos, ezért nem ez az alapértelmezett):
+```bash
+$ echo "export PATH=\$PATH:." >> ~/.bashrc
+$ mycode.py
+```
+
 Csomagok telepítése:
-`$ pip install matplotlib`
+```bash
+$ pip install matplotlib
+```
 
 Importálás:
 ```python
 from sys import argv as args
 import matplotlib.pyplot as plt
 ```
-
